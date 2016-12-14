@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class ResultsActivity extends AppCompatActivity {
     TextView results;
+    Button playAgain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +21,27 @@ public class ResultsActivity extends AppCompatActivity {
         setContentView(R.layout.results_activity);
 
         results = (TextView)findViewById(R.id.result_text);
+        playAgain = (Button)findViewById(R.id.play_again_button);
+
+
+
 
                 Intent intent = getIntent();
                 Bundle extras = intent.getExtras();
                 String winner = extras.getString("results");
                 results.setText(winner);
 
+        playAgain.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ResultsActivity.this, MainActivity.class);
+                startActivity(intent);
+
             }
-        }
+        });
+    }
 
-
+}
 
 
 
