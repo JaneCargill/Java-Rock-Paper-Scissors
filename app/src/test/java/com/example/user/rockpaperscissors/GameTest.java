@@ -30,6 +30,8 @@ public class GameTest {
     public void canGetResult() {
         game = new Game();
         assertEquals(ResultType.PLAYER_WIN, game.gameResult(OptionType.PAPER, OptionType.ROCK));
+        assertEquals(ResultType.DRAW, game.gameResult(OptionType.SCISSORS, OptionType.SCISSORS));
+        assertEquals(ResultType.COMPUTER_WIN, game.gameResult(OptionType.SCISSORS, OptionType.ROCK));
 
     }
 }
