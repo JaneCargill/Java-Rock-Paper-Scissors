@@ -34,4 +34,20 @@ public class GameTest {
         assertEquals(ResultType.COMPUTER_WIN, game.gameResult(OptionType.SCISSORS, OptionType.ROCK));
 
     }
+
+    @Test
+    public void canCountComputerWins() {
+        game = new Game();
+        assertEquals(1, game.computerWinCounter(OptionType.SCISSORS, OptionType.ROCK));
+    }
+    @Test
+    public void canCountPlayerWins() {
+        game = new Game();
+        assertEquals(1, game.playerWinCounter(OptionType.LIZARD, OptionType.SPOCK));
+    }
+    @Test
+    public void canCountDraws() {
+        game = new Game();
+        assertEquals(1, game.drawCounter(OptionType.SCISSORS, OptionType.SCISSORS));
+    }
 }

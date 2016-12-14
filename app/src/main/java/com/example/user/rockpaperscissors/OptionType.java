@@ -9,8 +9,9 @@ import java.util.Random;
 public enum OptionType {
     ROCK,
     PAPER,
-    SCISSORS
-
+    SCISSORS,
+    LIZARD,
+    SPOCK
 
 }
 
