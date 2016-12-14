@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/welcome_page_text"
+        android:textSize="60dp"
+        android:textColor="#92113E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Rock, Paper, Scissors! \n \n Please click below to play..."
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/play_button"
+        android:text="PLAY"
+        android:textSize="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+</LinearLayout>
